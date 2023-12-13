@@ -12,6 +12,7 @@ import { unstable_setRequestLocale } from 'next-intl/server';
 import { cn } from '@/lib/utils';
 import Header from '@/components/layout/Header';
 import { NextIntlClientProvider } from 'next-intl';
+import { Provider as BalancerProvider } from 'react-wrap-balancer';
 
 interface RootLayoutProps {
   children: ReactNode;
@@ -60,12 +61,14 @@ export default async function LocaleLayout({
       >
         <ThemeProvider attribute="class" disableTransitionOnChange>
           <NextTopLoader color="#2663E9" />
-          <NextIntlClientProvider messages={messages}>
-            <Header locale={locale}>
-              <LanguageSelector />
-            </Header>
-            {children}
-          </NextIntlClientProvider>
+          <BalancerProvider>
+            <NextIntlClientProvider messages={messages}>
+              <Header locale={locale}>
+                <LanguageSelector />
+              </Header>
+              {children}
+            </NextIntlClientProvider>
+          </BalancerProvider>
           {/* <Footer locale={locale} /> */}
         </ThemeProvider>
       </body>

@@ -29,15 +29,16 @@ const Header = async ({
         {/* <HeaderSheet messages={messages} locale={locale} /> */}
         <HeaderSheet messages={''} locale={locale} />
 
-        <div className="hidden gap-4 items-center justify-center md:flex">
-          <Link href={'/'}>
-            <Avatar>
-              <AvatarImage src={avatarUrl} />
-              <AvatarFallback>FA</AvatarFallback>
-            </Avatar>
-          </Link>
+        <Link
+          href={'/'}
+          className="hidden gap-4 items-center justify-center md:flex"
+        >
+          <Avatar>
+            <AvatarImage src={avatarUrl} />
+            <AvatarFallback>FA</AvatarFallback>
+          </Avatar>
           <p className="font-medium">Farhan Aziz Ath Thariq</p>
-        </div>
+        </Link>
 
         <div className="flex gap-3">
           <nav className="hidden md:flex gap-2">

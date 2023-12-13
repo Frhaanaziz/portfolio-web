@@ -8,5 +8,11 @@
     "headingNav3Href": "#projects",
     "headingNav4Label": "お問い合わせ",
     "headingNav4Href": "#contact"
+  },
+  "home": {
+    "heroHeading": "こんにちは、ファルハンです",
+    "heroDescription": "強力なフロントエンドのデザインと強力なバックエンドをシームレスに統合することにより、包括的なウェブソリューションを作成するフルスタックデベロッパー",
+    "heroLinkLabel": "私の仕事を見る",
+    "heroLinkHref": "#projects"
   }
 }

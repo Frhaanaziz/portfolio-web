@@ -8,5 +8,11 @@
     "headingNav3Href": "#projects",
     "headingNav4Label": "Contact",
     "headingNav4Href": "#contact"
+  },
+  "home": {
+    "heroHeading": "HEY, I'M FARHAN",
+    "heroDescription": "A Full Stack Developer crafting comprehensive web solutions by seamlessly integrating robust Frontend designs with powerful Backends",
+    "heroLinkLabel": "Projects",
+    "heroLinkHref": "#projects"
   }
 }

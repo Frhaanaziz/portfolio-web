@@ -8,5 +8,11 @@
     "headingNav3Href": "#projects",
     "headingNav4Label": "Kontak",
     "headingNav4Href": "#contact"
+  },
+  "home": {
+    "heroHeading": "HEI, AKU FARHAN",
+    "heroDescription": "Pengembang Full Stack yang membuat solusi web komprehensif dengan mengintegrasikan desain Frontend yang kuat dengan Backend yang kuat",
+    "heroLinkLabel": "Proyek",
+    "heroLinkHref": "#projects"
   }
 }
