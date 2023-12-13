@@ -1,5 +1,6 @@
 import MouseScrollLottie from '@/components/lottie/MouseScrollLottie';
-import { Button, buttonVariants } from '@/components/ui/button';
+import HomeAboutSection from '@/components/section/HomeAboutSection';
+import { buttonVariants } from '@/components/ui/button';
 import { emailAddress, githubUrl, linkedinUrl } from '@/lib/constant';
 import { Link } from '@/navigation';
 import { Github, Linkedin, Mail } from 'lucide-react';
@@ -56,12 +57,11 @@ const HomePage = ({ params: { locale } }: { params: { locale: string } }) => {
         </aside>
       </section>
 
-      <section className="bg-muted py-20">
-        <h2 className="text text-center text-3xl font-medium">About me</h2>
-        <div className=" flex justify-center my-5">
-          <div className="h-1.5 w-10 bg-primary rounded-lg" />
-        </div>
-      </section>
+      <HomeAboutSection />
+
+      {/* <section className="py-20" id="projects">
+        <h2 className='' >Projects</h2>
+      </section> */}
     </main>
   );
 };
