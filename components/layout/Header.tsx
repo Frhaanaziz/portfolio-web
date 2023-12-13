@@ -2,6 +2,7 @@ import { Link } from '@/navigation';
 import { ReactNode } from 'react';
 import { buttonVariants } from '../ui/button';
 import HeaderSheet from './HeaderSheet';
+import { ModeToggle } from '../ModeToggle';
 // import Logo from '@/components/Logo';
 
 const Header = async ({
@@ -46,16 +47,9 @@ const Header = async ({
 
         <div className="flex gap-3">
           {children}
-
-          <Link
-            // href={t('headingCta1Href')}
-            href={'#'}
-            className={buttonVariants({
-              size: 'sm',
-            })}
-          >
-            {/* {t('headingCta1Label')} */}
-          </Link>
+          <div>
+            <ModeToggle />
+          </div>
         </div>
       </div>
     </header>
