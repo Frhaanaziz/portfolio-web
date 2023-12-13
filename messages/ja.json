@@ -1,0 +1,12 @@
+{
+  "layout": {
+    "headingNav1Label": "ホーム",
+    "headingNav1Href": "/",
+    "headingNav2Label": "紹介",
+    "headingNav2Href": "#about",
+    "headingNav3Label": "プロジェクト",
+    "headingNav3Href": "#projects",
+    "headingNav4Label": "お問い合わせ",
+    "headingNav4Href": "#contact"
+  }
+}

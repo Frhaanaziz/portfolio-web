@@ -1,9 +1,12 @@
 import { Link } from '@/navigation';
 import { ReactNode } from 'react';
-import { buttonVariants } from '../ui/button';
 import HeaderSheet from './HeaderSheet';
 import { ModeToggle } from '../ModeToggle';
-// import Logo from '@/components/Logo';
+import { getTranslations } from 'next-intl/server';
+import { array4 } from '@/lib/utils';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { buttonVariants } from '../ui/button';
+import { avatarUrl } from '@/lib/constant';
 
 const Header = async ({
   children,
@@ -18,7 +21,7 @@ const Header = async ({
   //   });
   //   const messages = convertToLocalMessage(section);
   //   const t = createTranslator({ locale, messages });
-  //   const keys = Array.from({ length: 3 }, (_, i) => i + 1);
+  const t = await getTranslations('layout');
 
   return (
     <header className="sticky top-0 z-50 border-b bg-background">
@@ -26,14 +29,22 @@ const Header = async ({
         {/* <HeaderSheet messages={messages} locale={locale} /> */}
         <HeaderSheet messages={''} locale={locale} />
 
-        <div className="hidden items-center justify-center md:flex">
-          <Link href={'/'}>{/* <Logo /> */}</Link>
+        <div className="hidden gap-4 items-center justify-center md:flex">
+          <Link href={'/'}>
+            <Avatar>
+              <AvatarImage src={avatarUrl} />
+              <AvatarFallback>FA</AvatarFallback>
+            </Avatar>
+          </Link>
+          <p className="font-medium">Farhan Aziz Ath Thariq</p>
+        </div>
 
-          <nav className="flex gap-2">
-            {/* {keys.map((key) => (
+        <div className="flex gap-3">
+          <nav className="hidden md:flex gap-2">
+            {array4.map((key) => (
               <Link
                 key={key}
-                data-test={`headingNavLink${key}`}
+                // data-test={`headingNavLink${key}`}
                 href={t(`headingNav${key}Href`)}
                 className={buttonVariants({
                   variant: 'ghost',
@@ -41,11 +52,9 @@ const Header = async ({
               >
                 {t(`headingNav${key}Label`)}
               </Link>
-            ))} */}
+            ))}
           </nav>
-        </div>
 
-        <div className="flex gap-3">
           {children}
           <div>
             <ModeToggle />

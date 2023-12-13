@@ -1,5 +1,13 @@
 'use client';
-import { BarChart3Icon, ContactIcon, InfoIcon, Menu } from 'lucide-react';
+import {
+  BarChart3Icon,
+  ContactIcon,
+  FolderGit2,
+  HelpCircle,
+  Home,
+  InfoIcon,
+  Menu,
+} from 'lucide-react';
 import {
   Sheet,
   SheetContent,
@@ -10,8 +18,9 @@ import {
 import { Link } from '@/navigation';
 import { useState } from 'react';
 import { buttonVariants } from '@/components/ui/button';
-// import Logo from '@/components/Logo';
-import { createTranslator } from 'next-intl';
+import { useTranslations } from 'next-intl';
+import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
+import { avatarUrl } from '@/lib/constant';
 
 const HeaderSheet = ({
   messages,
@@ -22,11 +31,12 @@ const HeaderSheet = ({
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   //   const t = createTranslator({ locale, messages });
-  const Icon = [InfoIcon, BarChart3Icon, ContactIcon];
-  //   const keys = Array.from({ length: 3 }, (_, i) => ({
-  //     icon: Icon[i],
-  //     key: i + 1,
-  //   }));
+  const t = useTranslations('layout');
+  const Icon = [Home, HelpCircle, FolderGit2, ContactIcon];
+  const keys = Array.from({ length: 4 }, (_, i) => ({
+    icon: Icon[i],
+    key: i + 1,
+  }));
 
   return (
     <Sheet open={isOpen} onOpenChange={(v) => setIsOpen(v)}>
@@ -37,8 +47,12 @@ const HeaderSheet = ({
       <SheetContent side="left" className="max-w-[300px] px-0">
         <SheetHeader className="px-6">
           <SheetTitle asChild>
-            <Link href="/" onClick={() => setIsOpen(false)}>
-              {/* <Logo /> */}
+            <Link href={'/'} className="flex gap-3 items-center">
+              <Avatar>
+                <AvatarImage src={avatarUrl} />
+                <AvatarFallback>FA</AvatarFallback>
+              </Avatar>
+              <p>Farhan Aziz Ath Thariq</p>
             </Link>
           </SheetTitle>
         </SheetHeader>
@@ -46,8 +60,8 @@ const HeaderSheet = ({
         {/* Content */}
         <div className="flex min-h-0 flex-1 flex-col">
           <div className="flex flex-1 flex-col overflow-y-auto pb-4 pt-5">
-            <nav className="mt-5 flex-1 space-y-1 px-2">
-              {/* {keys.map((item) => (
+            <nav className="flex-1 space-y-1 px-2">
+              {keys.map((item) => (
                 <Link
                   key={item.key}
                   href={t(`headingNav${item.key}Href`)}
@@ -65,7 +79,7 @@ const HeaderSheet = ({
                     {t(`headingNav${item.key}Label`)}
                   </div>
                 </Link>
-              ))} */}
+              ))}
             </nav>
           </div>
         </div>

@@ -1,0 +1,12 @@
+{
+  "layout": {
+    "headingNav1Label": "Home",
+    "headingNav1Href": "/",
+    "headingNav2Label": "About",
+    "headingNav2Href": "#about",
+    "headingNav3Label": "Projects",
+    "headingNav3Href": "#projects",
+    "headingNav4Label": "Contact",
+    "headingNav4Href": "#contact"
+  }
+}

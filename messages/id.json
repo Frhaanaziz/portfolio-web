@@ -1,0 +1,12 @@
+{
+  "layout": {
+    "headingNav1Label": "Beranda",
+    "headingNav1Href": "/",
+    "headingNav2Label": "Tentang",
+    "headingNav2Href": "#about",
+    "headingNav3Label": "Proyek",
+    "headingNav3Href": "#projects",
+    "headingNav4Label": "Kontak",
+    "headingNav4Href": "#contact"
+  }
+}
