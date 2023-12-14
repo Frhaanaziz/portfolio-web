@@ -13,6 +13,17 @@
     "heroHeading": "こんにちは、ファルハンです",
     "heroDescription": "強力なフロントエンドのデザインと強力なバックエンドをシームレスに統合することにより、包括的なウェブソリューションを作成するフルスタックデベロッパー",
     "heroLinkLabel": "私の仕事を見る",
-    "heroLinkHref": "#projects"
+    "heroLinkHref": "#projects",
+
+    "aboutHeading": "私について",
+    "aboutSubHeading": "ここでは私に関する詳細情報、私の仕事、そして主にプログラミングと技術に関する現在のスキルについての情報があります",
+    "aboutDescriptionHeading": "私を知ってください！",
+    "aboutDescription1": "私はフルスタックウェブデベロッパーで、ウェブアプリケーションを最初から最後まで構築するのが得意です。ウェブアプリケーションのフロントエンドとバックエンドの両方を開発し、クライアントサイドとサーバーサイドの両方の技術を使用しています。",
+    "aboutDescription2": "フロントエンドでは、ReactなどのHTML、CSS、JavaScriptフレームワークを使用して、応答性のある直感的なユーザーインターフェースを作成します。ユーザーエクスペリエンスを向上させる機能を実装し、モバイルデバイスに対するクロスブラウザの互換性と応答性を確保します。",
+    "aboutDescription3": "バックエンドでは、Nextjs Server ActionsやMySQL、PostgreSQLなどのデータベースを使用して、機能、セキュリティ、データのためのサーバー、API、およびデータベースコンポーネントを開発します。フロントエンドの要素をRESTful APIを介してバックエンドと統合します。",
+    "aboutDescription4": "私は貢献し、学び、成長できる仕事の機会に開かれています。私のスキルと経験に合った良い機会があれば、お気軽にご連絡ください。",
+    "aboutLinkLabel": "お問い合わせ",
+    "aboutLinkHref": "#contact",
+    "aboutSkillsHeading": "私のスキル"
   }
 }

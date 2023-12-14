@@ -64,6 +64,7 @@ const HeaderSheet = ({
               {keys.map((item) => (
                 <Link
                   key={item.key}
+                  // @ts-ignore
                   href={t(`headingNav${item.key}Href`)}
                   onClick={() => setIsOpen(false)}
                   className={buttonVariants({
@@ -76,6 +77,7 @@ const HeaderSheet = ({
                       className="mr-3 h-6 w-6 shrink-0"
                       aria-hidden="true"
                     />
+                    {/* @ts-ignore */}
                     {t(`headingNav${item.key}Label`)}
                   </div>
                 </Link>

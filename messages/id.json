@@ -13,6 +13,17 @@
     "heroHeading": "HEI, AKU FARHAN",
     "heroDescription": "Pengembang Full Stack yang membuat solusi web komprehensif dengan mengintegrasikan desain Frontend yang kuat dengan Backend yang kuat",
     "heroLinkLabel": "Proyek",
-    "heroLinkHref": "#projects"
+    "heroLinkHref": "#projects",
+
+    "aboutHeading": "Tentang Saya",
+    "aboutSubHeading": "Di sini Anda akan menemukan informasi lebih lanjut tentang saya, apa yang saya lakukan, dan keterampilan saya saat ini, terutama dalam hal pemrograman dan teknologi",
+    "aboutDescriptionHeading": "Kenali saya!",
+    "aboutDescription1": "Saya adalah Pengembang Web Full Stack yang terampil dalam membangun aplikasi web lengkap dari awal hingga selesai. Saya mengembangkan bagian depan dan belakang aplikasi web, bekerja dengan teknologi sisi klien dan sisi server.",
+    "aboutDescription2": "Di bagian depan, saya membuat antarmuka pengguna responsif dan intuitif menggunakan HTML, CSS, kerangka kerja JavaScript seperti React. Saya mengimplementasikan fitur yang meningkatkan pengalaman pengguna dan memastikan kompatibilitas lintas browser serta responsivitas untuk perangkat seluler.",
+    "aboutDescription3": "Di bagian belakang, saya mengembangkan komponen server, API, dan database untuk fungsionalitas, keamanan, dan data menggunakan Nextjs Server Actions dan database seperti MySQL dan PostgreSQL. Saya mengintegrasikan elemen front-end dengan back-end melalui RESTful APIs.",
+    "aboutDescription4": "Saya terbuka untuk peluang pekerjaan di mana saya dapat memberikan kontribusi, belajar, dan berkembang. Jika Anda memiliki kesempatan bagus yang sesuai dengan keterampilan dan pengalaman saya, jangan ragu untuk menghubungi saya.",
+    "aboutLinkLabel": "Hubungi",
+    "aboutLinkHref": "#contact",
+    "aboutSkillsHeading": "Keterampilan Saya"
   }
 }

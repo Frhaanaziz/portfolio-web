@@ -46,11 +46,13 @@ const Header = async ({
               <Link
                 key={key}
                 // data-test={`headingNavLink${key}`}
+                // @ts-ignore
                 href={t(`headingNav${key}Href`)}
                 className={buttonVariants({
                   variant: 'ghost',
                 })}
               >
+                {/* @ts-ignore */}
                 {t(`headingNav${key}Label`)}
               </Link>
             ))}

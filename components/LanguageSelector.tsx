@@ -37,8 +37,9 @@ const LanguageSelector = () => {
     <Select onValueChange={handleChangeLanguage} defaultValue={locale}>
       <SelectTrigger disabled={isUpdating} data-test="language-selector-button">
         {isUpdating ? (
-          <p className="flex items-center">
-            <Loader2 className="mr-1 h-4 w-4 animate-spin" /> Updating...
+          <p className="flex items-center mr-1">
+            <Loader2 className="mr-1 h-4 w-4 animate-spin" />{' '}
+            <span>Updating...</span>
           </p>
         ) : (
           <SelectValue />
@@ -54,7 +55,7 @@ const LanguageSelector = () => {
             data-test={`language-selector-item-${option.value}`}
           >
             <IconFlag value={option.value} />
-            <span className="hidden lg:inline-block">{option.name}</span>
+            <span className="hidden lg:inline-block mr-1">{option.name}</span>
           </SelectItem>
         ))}
       </SelectContent>

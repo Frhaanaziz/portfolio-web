@@ -13,6 +13,17 @@
     "heroHeading": "HEY, I'M FARHAN",
     "heroDescription": "A Full Stack Developer crafting comprehensive web solutions by seamlessly integrating robust Frontend designs with powerful Backends",
     "heroLinkLabel": "Projects",
-    "heroLinkHref": "#projects"
+    "heroLinkHref": "#projects",
+
+    "aboutHeading": "About Me",
+    "aboutSubHeading": "Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology",
+    "aboutDescriptionHeading": "Get to know me!",
+    "aboutDescription1": "I'm a Full Stack Web Developer skilled in building complete web applications from start to finish. I develop both the front-end and back-end portions of web applications, working with both client-side and server-side technologies.",
+    "aboutDescription2": "On the front-end, I create responsive and intuitive user interfaces using HTML, CSS, JavaScript frameworks like React. I implement features that enhance the user experience and ensure cross-browser compatibility and responsiveness for mobile devices.",
+    "aboutDescription3": "On the back-end, I develop server, API and database components for functionality, security and data using Nextjs Server Actions and databases such as MySQL and PostgreSQL. I integrate the front-end elements with the back-end through RESTful APIs.",
+    "aboutDescription4": "I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.",
+    "aboutLinkLabel": "Contact",
+    "aboutLinkHref": "#contact",
+    "aboutSkillsHeading": "My Skills"
   }
 }

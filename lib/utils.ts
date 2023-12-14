@@ -12,3 +12,5 @@ export const array4 = Array.from({ length: 4 }, (_, i) => i + 1);
 export const array5 = Array.from({ length: 5 }, (_, i) => i + 1);
 export const array6 = Array.from({ length: 6 }, (_, i) => i + 1);
 export const array7 = Array.from({ length: 7 }, (_, i) => i + 1);
+export const array8 = Array.from({ length: 8 }, (_, i) => i + 1);
+export const array9 = Array.from({ length: 9 }, (_, i) => i + 1);

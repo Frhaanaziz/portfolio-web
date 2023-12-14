@@ -16,7 +16,7 @@ const HomePage = ({ params: { locale } }: { params: { locale: string } }) => {
     <main>
       <section className="min-h-[calc(100vh-4rem)] flex items-center justify-center">
         <div className=" relative h-full flex flex-col gap-10 justify-center items-center container">
-          <h1 className="text-3xl font-bold md:text-4xl lg:text-5xl xl:text-6xl animate-fade-up bg-gradient-to-br from-foreground to-muted-foreground bg-clip-text tracking-[-0.02em] text-transparent drop-shadow-sm">
+          <h1 className="text-3xl font-bold md:text-4xl lg:text-5xl xl:text-6xl animate-fade-up bg-gradient-to-br from-foreground to-muted-foreground bg-clip-text tracking-[-0.02em] text-transparent drop-shadow-sm text-center">
             {/* {t('heroHeading')} */}
             Lorem ipsum dolor sit.
           </h1>
@@ -35,8 +35,8 @@ const HomePage = ({ params: { locale } }: { params: { locale: string } }) => {
           </Link>
         </div>
         <MouseScrollLottie
-          className="absolute bottom-5 dark:invert"
-          skeletonClassName="absolute bottom-5"
+          className="absolute hidden lg:block bottom-5 dark:invert"
+          skeletonClassName="absolute hidden lg:block bottom-5"
         />
 
         {/* buatlah menjadi posisi tengah kiri */}
