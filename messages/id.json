@@ -32,6 +32,16 @@
     "projects1Heading": "Thriftshop",
     "projects1Description": "Sebuah platform e-commerce toko bekas yang memungkinkan pengguna membuka toko online mereka sendiri dan mengunggah produk bekas untuk dijual. Ada panel toko bagi penjual untuk mengelola produk. Pembeli dapat melihat dan checkout barang dari berbagai toko.",
     "projects1CSLink": "/cs/thriftshop",
-    "projects1CSLabel": "Studi Kasus"
+    "projects1CSLabel": "Studi Kasus",
+
+    "contactHeading": "Kontak",
+    "contactSubHeading": "Jangan ragu untuk menghubungi saya dengan mengirimkan formulir di bawah ini dan saya akan segera menghubungi Anda",
+    "contactFormField1Label": "Nama",
+    "contactFormField1Placeholder": "Masukkan nama Anda",
+    "contactFormField2Label": "Email",
+    "contactFormField2Placeholder": "Masukkan email Anda",
+    "contactFormField3Label": "Pesan",
+    "contactFormField3Placeholder": "Masukkan pesan Anda",
+    "contactFormSubmitButtonLabel": "Kirim"
   }
 }

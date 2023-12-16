@@ -1,5 +1,6 @@
 import MouseScrollLottie from '@/components/lottie/MouseScrollLottie';
 import HomeAboutSection from '@/components/section/HomeAboutSection';
+import HomeContactSection from '@/components/section/HomeContactSection';
 import HomeProjectsSection from '@/components/section/HomeProjectsSection';
 import { buttonVariants } from '@/components/ui/button';
 import { emailAddress, githubUrl, linkedinUrl } from '@/lib/constant';
@@ -61,6 +62,8 @@ const HomePage = ({ params: { locale } }: { params: { locale: string } }) => {
       <HomeAboutSection />
 
       <HomeProjectsSection />
+
+      <HomeContactSection />
     </main>
   );
 };

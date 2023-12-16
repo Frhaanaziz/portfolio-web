@@ -13,6 +13,7 @@ import { cn } from '@/lib/utils';
 import Header from '@/components/layout/Header';
 import { NextIntlClientProvider } from 'next-intl';
 import { Provider as BalancerProvider } from 'react-wrap-balancer';
+import ToastProvider from '@/context/ToastProvider';
 
 interface RootLayoutProps {
   children: ReactNode;
@@ -63,10 +64,12 @@ export default async function LocaleLayout({
           <NextTopLoader color="#2663E9" />
           <BalancerProvider>
             <NextIntlClientProvider messages={messages}>
-              <Header locale={locale}>
-                <LanguageSelector />
-              </Header>
-              {children}
+              <ToastProvider>
+                <Header locale={locale}>
+                  <LanguageSelector />
+                </Header>
+                {children}
+              </ToastProvider>
             </NextIntlClientProvider>
           </BalancerProvider>
           {/* <Footer locale={locale} /> */}

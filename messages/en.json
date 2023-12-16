@@ -28,11 +28,20 @@
 
     "projectsHeading": "Projects",
     "projectsSubHeading": "Here you will find some of the personal and clients projects that I created with each project containing its own case study",
-
     "projects1ImageSource": "/",
     "projects1Heading": "Thriftshop",
     "projects1Description": "A platform e-commerce thrift shop that allows users to open their own online stores and upload used products to sell. There is a store panel for sellers to manage products. Buyers can view and checkout items from various stores.",
     "projects1CSLink": "/cs/thriftshop",
-    "projects1CSLabel": "Case Study"
+    "projects1CSLabel": "Case Study",
+
+    "contactHeading": "Contact",
+    "contactSubHeading": "Feel free to Contact me by submitting the form below and I will get back to you as soon as possible",
+    "contactFormField1Label": "Name",
+    "contactFormField1Placeholder": "Enter your name",
+    "contactFormField2Label": "Email",
+    "contactFormField2Placeholder": "Enter your email",
+    "contactFormField3Label": "Message",
+    "contactFormField3Placeholder": "Enter your message",
+    "contactFormSubmitButtonLabel": "Submit"
   }
 }

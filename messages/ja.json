@@ -32,6 +32,16 @@
     "projects1Heading": "Thriftshop",
     "projects1Description": "ユーザーが独自のオンラインストアを開設し、販売するために中古品をアップロードできるフリマプラットフォームECサイトです。 販売者は商品を管理するためのストアパネルがあります。 バイヤーは、様々なストアから商品を表示およびチェックアウトできます。",
     "projects1CSLink": "/cs/thriftshop",
-    "projects1CSLabel": "ケーススタディ"
+    "projects1CSLabel": "ケーススタディ",
+
+    "contactHeading": "お問い合わせ",
+    "contactSubHeading": "以下のフォームを送信して、お気軽にお問い合わせください。できるだけ早くご連絡いたします。",
+    "contactFormField1Label": "名前",
+    "contactFormField1Placeholder": "お名前を入力してください",
+    "contactFormField2Label": "メールアドレス",
+    "contactFormField2Placeholder": "メールアドレスを入力してください",
+    "contactFormField3Label": "メッセージ",
+    "contactFormField3Placeholder": "メッセージを入力してください",
+    "contactFormSubmitButtonLabel": "送信"
   }
 }
