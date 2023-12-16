@@ -46,7 +46,7 @@ const HeaderSheet = ({
 
       <SheetContent side="left" className="max-w-[300px] px-0">
         <SheetHeader className="px-6">
-          <SheetTitle asChild>
+          <SheetTitle asChild className="text-base">
             <Link href={'/'} className="flex gap-3 items-center">
               <Avatar>
                 <AvatarImage src={avatarUrl} />

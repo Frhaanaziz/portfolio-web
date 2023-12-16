@@ -24,6 +24,15 @@
     "aboutDescription4": "I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.",
     "aboutLinkLabel": "Contact",
     "aboutLinkHref": "#contact",
-    "aboutSkillsHeading": "My Skills"
+    "aboutSkillsHeading": "My Skills",
+
+    "projectsHeading": "Projects",
+    "projectsSubHeading": "Here you will find some of the personal and clients projects that I created with each project containing its own case study",
+
+    "projects1ImageSource": "/",
+    "projects1Heading": "Thriftshop",
+    "projects1Description": "A platform e-commerce thrift shop that allows users to open their own online stores and upload used products to sell. There is a store panel for sellers to manage products. Buyers can view and checkout items from various stores.",
+    "projects1CSLink": "/cs/thriftshop",
+    "projects1CSLabel": "Case Study"
   }
 }

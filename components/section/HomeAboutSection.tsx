@@ -17,13 +17,13 @@ const HomeAboutSection = () => {
 
   return (
     <section className="bg-muted py-20" id="about">
-      <div className="container ">
+      <div className="container">
         <motion.h2
           variants={animationVariant}
           initial="initial"
           whileInView={'animate'}
           viewport={{ once: true }}
-          className="text-center text-3xl font-medium"
+          className="text-center text-3xl lg:text-4xl font-medium"
         >
           {t('aboutHeading')}
         </motion.h2>
@@ -42,7 +42,7 @@ const HomeAboutSection = () => {
           initial="initial"
           whileInView={'animate'}
           viewport={{ once: true }}
-          className="text-muted-foreground max-w-lg mx-auto text-center"
+          className="text-muted-foreground max-w-xl lg:text-lg mx-auto text-center"
         >
           <Balancer preferNative={false}>{t('aboutSubHeading')}</Balancer>
         </motion.p>
@@ -54,7 +54,7 @@ const HomeAboutSection = () => {
               initial="initial"
               whileInView={'animate'}
               viewport={{ once: true }}
-              className="font-medium text-xl mb-7"
+              className="font-semibold text-xl mb-7"
             >
               {t('aboutDescriptionHeading')}
             </motion.h3>
@@ -94,7 +94,7 @@ const HomeAboutSection = () => {
               initial="initial"
               whileInView={'animate'}
               viewport={{ once: true }}
-              className="font-medium text-xl mb-7"
+              className="font-semibold text-xl mb-7"
             >
               {t(`aboutSkillsHeading`)}
             </motion.h3>

@@ -1,5 +1,6 @@
 import MouseScrollLottie from '@/components/lottie/MouseScrollLottie';
 import HomeAboutSection from '@/components/section/HomeAboutSection';
+import HomeProjectsSection from '@/components/section/HomeProjectsSection';
 import { buttonVariants } from '@/components/ui/button';
 import { emailAddress, githubUrl, linkedinUrl } from '@/lib/constant';
 import { Link } from '@/navigation';
@@ -59,9 +60,7 @@ const HomePage = ({ params: { locale } }: { params: { locale: string } }) => {
 
       <HomeAboutSection />
 
-      {/* <section className="py-20" id="projects">
-        <h2 className='' >Projects</h2>
-      </section> */}
+      <HomeProjectsSection />
     </main>
   );
 };

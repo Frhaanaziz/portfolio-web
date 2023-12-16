@@ -24,6 +24,14 @@
     "aboutDescription4": "Saya terbuka untuk peluang pekerjaan di mana saya dapat memberikan kontribusi, belajar, dan berkembang. Jika Anda memiliki kesempatan bagus yang sesuai dengan keterampilan dan pengalaman saya, jangan ragu untuk menghubungi saya.",
     "aboutLinkLabel": "Hubungi",
     "aboutLinkHref": "#contact",
-    "aboutSkillsHeading": "Keterampilan Saya"
+    "aboutSkillsHeading": "Keterampilan Saya",
+
+    "projectsHeading": "Proyek",
+    "projectsSubHeading": "Di sini Anda akan menemukan beberapa proyek pribadi dan klien yang saya buat dengan setiap proyek yang berisi studi kasusnya sendiri",
+    "projects1ImageSource": "/",
+    "projects1Heading": "Thriftshop",
+    "projects1Description": "Sebuah platform e-commerce toko bekas yang memungkinkan pengguna membuka toko online mereka sendiri dan mengunggah produk bekas untuk dijual. Ada panel toko bagi penjual untuk mengelola produk. Pembeli dapat melihat dan checkout barang dari berbagai toko.",
+    "projects1CSLink": "/cs/thriftshop",
+    "projects1CSLabel": "Studi Kasus"
   }
 }
