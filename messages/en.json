@@ -7,7 +7,9 @@
     "headingNav3Label": "Projects",
     "headingNav3Href": "#projects",
     "headingNav4Label": "Contact",
-    "headingNav4Href": "#contact"
+    "headingNav4Href": "#contact",
+
+    "footerText": "© Copyright 2023. Made by Farhan Aziz"
   },
   "home": {
     "heroHeading": "HEY, I'M FARHAN",

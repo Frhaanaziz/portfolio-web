@@ -158,7 +158,7 @@ const HomeContactSection = () => {
               )}
             />
             <motion.button
-              variants={animationVariant}
+              variants={rightAnimationVariant}
               initial="initial"
               whileInView={'animate'}
               viewport={{ once: true }}

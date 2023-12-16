@@ -7,7 +7,9 @@
     "headingNav3Label": "Proyek",
     "headingNav3Href": "#projects",
     "headingNav4Label": "Kontak",
-    "headingNav4Href": "#contact"
+    "headingNav4Href": "#contact",
+
+    "footerText": "© Hak Cipta 2023. Dibuat oleh Farhan Aziz"
   },
   "home": {
     "heroHeading": "HEI, AKU FARHAN",

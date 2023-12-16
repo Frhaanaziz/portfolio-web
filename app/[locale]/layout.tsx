@@ -14,6 +14,7 @@ import Header from '@/components/layout/Header';
 import { NextIntlClientProvider } from 'next-intl';
 import { Provider as BalancerProvider } from 'react-wrap-balancer';
 import ToastProvider from '@/context/ToastProvider';
+import Footer from '@/components/layout/Footer';
 
 interface RootLayoutProps {
   children: ReactNode;
@@ -69,10 +70,10 @@ export default async function LocaleLayout({
                   <LanguageSelector />
                 </Header>
                 {children}
+                <Footer />
               </ToastProvider>
             </NextIntlClientProvider>
           </BalancerProvider>
-          {/* <Footer locale={locale} /> */}
         </ThemeProvider>
       </body>
     </html>

@@ -7,7 +7,9 @@
     "headingNav3Label": "プロジェクト",
     "headingNav3Href": "#projects",
     "headingNav4Label": "お問い合わせ",
-    "headingNav4Href": "#contact"
+    "headingNav4Href": "#contact",
+
+    "footerText": "© 著作権2023年。ファルハンアジズによって作られました。"
   },
   "home": {
     "heroHeading": "こんにちは、ファルハンです",

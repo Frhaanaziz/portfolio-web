@@ -3,7 +3,7 @@ import HomeAboutSection from '@/components/section/HomeAboutSection';
 import HomeContactSection from '@/components/section/HomeContactSection';
 import HomeProjectsSection from '@/components/section/HomeProjectsSection';
 import { buttonVariants } from '@/components/ui/button';
-import { emailAddress, githubUrl, linkedinUrl } from '@/lib/constant';
+import { contactNavigation } from '@/lib/constant';
 import { Link } from '@/navigation';
 import { Github, Linkedin, Mail } from 'lucide-react';
 import { useTranslations } from 'next-intl';
@@ -43,17 +43,13 @@ const HomePage = ({ params: { locale } }: { params: { locale: string } }) => {
 
         {/* buatlah menjadi posisi tengah kiri */}
         <aside className="absolute hidden md:block left-0 top-[calc(1/2-138px)]">
-          <ul className="bg-foreground p-3 rounded">
+          <ul className="bg-foreground p-3 rounded-r">
             <li className="flex flex-col gap-4">
-              <Link href={githubUrl}>
-                <Github className="invert w-9 h-9" />
-              </Link>
-              <Link href={linkedinUrl}>
-                <Linkedin className="invert w-9 h-9" />
-              </Link>
-              <Link href={`mailto:${emailAddress}`}>
-                <Mail className="invert w-9 h-9" />
-              </Link>
+              {contactNavigation.map((item) => (
+                <Link key={item.name} href={item.href}>
+                  <item.icon className="invert w-9 h-9" />
+                </Link>
+              ))}
             </li>
           </ul>
         </aside>
