@@ -1,7 +1,7 @@
 import ImageTheme from '@/components/ImageTheme';
+import RichText from '@/components/RichText';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
 import { buttonVariants } from '@/components/ui/button';
-import { skills } from '@/lib/constant';
 import { cn, toTitleCase } from '@/lib/utils';
 import { Link } from '@/navigation';
 import { useTranslations } from 'next-intl';
@@ -37,6 +37,7 @@ const CaseStudyProjectPage = ({
         </Balancer>
         <Link
           className={buttonVariants({ size: 'lg' })}
+          target="_blank"
           // @ts-ignore
           href={t(`${project}Link`)}
         >
@@ -59,12 +60,9 @@ const CaseStudyProjectPage = ({
           {t('overviewHeading')}
         </h2>
 
-        <div
-          className="space-y-5 mt-7 text-muted-foreground text-justify"
-          dangerouslySetInnerHTML={{
-            // @ts-ignore
-            __html: t.raw(`${project}OverviewDescription`),
-          }}
+        <RichText
+          // @ts-ignore
+          content={t.raw(`${project}OverviewDescription`)}
         />
 
         <h2 className="text-xl md:text-2xl font-semibold mt-16">
@@ -89,6 +87,7 @@ const CaseStudyProjectPage = ({
         <div className="mt-7 flex gap-5">
           <Link
             className={cn(buttonVariants({ size: 'lg' }), '')}
+            target="_blank"
             // @ts-ignore
             href={t(`${project}Link`)}
           >
