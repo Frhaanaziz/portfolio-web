@@ -3,7 +3,7 @@ import Balancer from 'react-wrap-balancer';
 import { motion } from 'framer-motion';
 import { animationVariant, rightAnimationVariant } from '@/lib/animations';
 import { useTranslations } from 'next-intl';
-import { Button, buttonVariants } from '@/components/ui/button';
+import { buttonVariants } from '@/components/ui/button';
 
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
@@ -20,7 +20,7 @@ import * as z from 'zod';
 import { Textarea } from '../ui/textarea';
 import { Loader2 } from 'lucide-react';
 import { toast } from 'sonner';
-import { getErrorMessage } from '@/lib/utils';
+import { cn, getErrorMessage } from '@/lib/utils';
 import { ContactFormSchema } from '@/lib/validations/contact';
 import { sendEmailAction } from '@/app/_actions/contact';
 import AnimationDiv from '../AnimationDiv';
@@ -162,7 +162,10 @@ const HomeContactSection = () => {
               initial="initial"
               whileInView={'animate'}
               viewport={{ once: true }}
-              className={buttonVariants()}
+              className={cn(
+                buttonVariants(),
+                'disabled:bg-primary/50 disabled:text-primary-foreground/50'
+              )}
               type="submit"
               disabled={isSubmitting}
             >
