@@ -5,7 +5,6 @@ import HomeProjectsSection from '@/components/section/HomeProjectsSection';
 import { buttonVariants } from '@/components/ui/button';
 import { contactNavigation } from '@/lib/constant';
 import { Link } from '@/navigation';
-import { Github, Linkedin, Mail } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { unstable_setRequestLocale } from 'next-intl/server';
 import Balancer from 'react-wrap-balancer';

@@ -55,7 +55,7 @@ const HomeContactSection = () => {
   }
 
   return (
-    <section className="py-20 bg-accent" id="about">
+    <section className="py-20 bg-accent" id="contact">
       <div className="container  max-w-[900px]">
         <motion.h2
           variants={animationVariant}
