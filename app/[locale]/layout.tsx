@@ -15,6 +15,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { Provider as BalancerProvider } from 'react-wrap-balancer';
 import ToastProvider from '@/context/ToastProvider';
 import Footer from '@/components/layout/Footer';
+import GoogleAnalytics from '@/components/GoogleAnalytics';
 
 interface RootLayoutProps {
   children: ReactNode;
@@ -69,6 +70,9 @@ export default async function LocaleLayout({
           fontSans.variable
         )}
       >
+        {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS && (
+          <GoogleAnalytics ga_id={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS} />
+        )}
         <ThemeProvider attribute="class" disableTransitionOnChange>
           <NextTopLoader color="#2663E9" />
           <BalancerProvider>
