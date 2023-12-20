@@ -13,6 +13,7 @@ const Footer = () => {
             <Link
               key={item.name}
               href={item.href}
+              target="_blank"
               className="hover:text-muted-foreground/80 text-muted-foreground transition"
             >
               <span className="sr-only">{item.name}</span>
