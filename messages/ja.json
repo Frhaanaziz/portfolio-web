@@ -48,20 +48,21 @@
   },
   "CSProject": {
     "mainDescription": "このページには、プロジェクトの概要、使用されているツール、および公式製品へのリンクが含まれている{project}プロジェクトのケーススタディが含まれています。",
-    "projectLinkLabel": "プロジェクトリンク",
     "overviewHeading": "プロジェクトの概要",
     "toolsHeading": "使用ツール",
     "backHeading": "戻る",
     "liveHeading": "ライブを見る",
+    "projectLinkLabel": "プロジェクトリンク",
 
     "thriftshopLink": "https://thriftshop.aththariq.com/",
+    "thriftshopGithubLink": "https://github.com/Frhaanaziz/thriftshop",
     "thriftshopOverviewDescription": "<p>Thrift Shopは、ユーザーがオンラインストアを自分で作成し、古着屋のように中古品を販売できるECサイトです。ユーザーはアカウントを登録し、ストアプロフィールを作成し、商品をアップロードできます。</p><p>主な機能:</p><ul><li>ユーザーアカウント登録</li><li>ストアプロフィール作成</li><li>商品管理のためのストアパネル</li><li>商品説明、写真、カテゴリー、在庫、価格のアップロードフォーム</li><li>商品検索と絞り込みシステム</li><li>ショッピングカート</li><li>ストアパネルにより、販売者が在庫を追加し、詳細を更新して商品を管理できます。</li><li>購入者はさまざまなストアの商品をブラウズ、検索し、ショッピングカートに追加できます。</li></ul>",
     "thriftshopToolsCount": "6",
     "thriftshopTools1": "Typescript",
     "thriftshopTools2": "Nextjs",
     "thriftshopTools3": "Supabase",
     "thriftshopTools4": "Shadcn UI",
-    "thriftshopTools5": "GithriftshopThub",
+    "thriftshopTools5": "Github",
     "thriftshopTools6": "Tailwindcss"
   }
 }

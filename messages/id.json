@@ -30,8 +30,8 @@
 
     "projectsHeading": "Proyek",
     "projectsSubHeading": "Di sini Anda akan menemukan beberapa proyek pribadi dan klien yang saya buat dengan setiap proyek yang berisi studi kasusnya sendiri",
-    "projects1ImageSource": "/",
     "projects1Heading": "Thriftshop",
+    "projects1ImageSource": "/",
     "projects1Description": "Sebuah platform e-commerce toko bekas yang memungkinkan pengguna membuka toko online mereka sendiri dan mengunggah produk bekas untuk dijual. Ada panel toko bagi penjual untuk mengelola produk. Pembeli dapat melihat dan checkout barang dari berbagai toko.",
     "projects1CSLink": "/cs/thriftshop",
     "projects1CSLabel": "Studi Kasus",
@@ -48,20 +48,21 @@
   },
   "CSProject": {
     "mainDescription": "Halaman ini berisi studi kasus proyek {project} yang mencakup Gambaran Proyek, Alat yang Digunakan dan Tautan Langsung ke produk resmi.",
-    "projectLinkLabel": "Tautan Proyek",
     "overviewHeading": "Gambaran Proyek",
     "toolsHeading": "Alat yang Digunakan",
     "backHeading": "Kembali",
     "liveHeading": "Lihat Langsung",
+    "projectLinkLabel": "Tautan Proyek",
 
     "thriftshopLink": "https://thriftshop.aththariq.com/",
+    "thriftshopGithubLink": "https://github.com/Frhaanaziz/thriftshop",
     "thriftshopOverviewDescription": "<p>Thrift Shop merupakan platform e-commerce yang memungkinkan pengguna untuk membuat toko online sendiri dan menjual barang-barang bekas layaknya di thrift shop. Pengguna dapat mendaftar akun, membuat profil toko, dan mengunggah produk mereka.</p><p>Fitur-fitur utama:</p><ul><li>Pendaftaran akun pengguna</li><li>Pembuatan profil toko</li><li>Panel toko untuk mengelola produk</li><li>Form unggah produk dengan detail deskripsi, foto, kategori, stok, dan harga</li><li>Sistem pencarian dan penyaringan produk</li><li>Keranjang belanja</li><li>Panel toko memungkinkan penjual mengelola produknya dengan menambahkan stok dan memperbarui detailnya.</li><li>Pembeli dapat menelusuri dan mencari produk dari berbagai toko dan menambahkannya ke keranjang belanja.</li></ul>",
     "thriftshopToolsCount": "6",
     "thriftshopTools1": "Typescript",
     "thriftshopTools2": "Nextjs",
     "thriftshopTools3": "Supabase",
     "thriftshopTools4": "Shadcn UI",
-    "thriftshopTools5": "GithriftshopThub",
+    "thriftshopTools5": "Github",
     "thriftshopTools6": "Tailwindcss"
   }
 }

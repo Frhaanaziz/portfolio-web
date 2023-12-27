@@ -30,9 +30,9 @@
 
     "projectsHeading": "Projects",
     "projectsSubHeading": "Here you will find some of the personal and clients projects that I created with each project containing its own case study",
-    "projects1ImageSource": "/",
     "projects1Heading": "Thriftshop",
     "projects1Description": "A platform e-commerce thrift shop that allows users to open their own online stores and upload used products to sell. There is a store panel for sellers to manage products. Buyers can view and checkout items from various stores.",
+    "projects1ImageSource": "/",
     "projects1CSLink": "/cs/thriftshop",
     "projects1CSLabel": "Case Study",
 
@@ -48,20 +48,21 @@
   },
   "CSProject": {
     "mainDescription": "This page contains the case study of {project} project which includes the Project Overview, Tools Used and Live Links to the official product.",
-    "projectLinkLabel": "Project Link",
     "overviewHeading": "Project Overview",
     "toolsHeading": "Tools Used",
     "backHeading": "Go Back",
     "liveHeading": "See Live",
+    "projectLinkLabel": "Project Link",
 
     "thriftshopLink": "https://thriftshop.aththariq.com/",
+    "thriftshopGithubLink": "https://github.com/Frhaanaziz/thriftshop",
     "thriftshopOverviewDescription": "<p>Thrift Shop is an e-commerce platform that allows users to create their own online store and sell secondhand items like a thrift shop. Users can register an account, create a store profile, and upload their products.</p><p>Main features:</p><ul><li>User account registration</li><li>Store profile creation</li><li>Store panel to manage products</li><li>Product upload form with description details, photos, category, stock, and price</li><li>Product search and filtering system</li><li>Shopping cart</li><li>The store panel allows sellers to manage their products by adding stock and updating details.</li><li>Buyers can browse and search for products from various stores and add them to the shopping cart.</li></ul>",
     "thriftshopToolsCount": "6",
     "thriftshopTools1": "Typescript",
     "thriftshopTools2": "Nextjs",
     "thriftshopTools3": "Supabase",
     "thriftshopTools4": "Shadcn UI",
-    "thriftshopTools5": "GithriftshopThub",
+    "thriftshopTools5": "Github",
     "thriftshopTools6": "Tailwindcss"
   }
 }
