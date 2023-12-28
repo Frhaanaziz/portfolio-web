@@ -59,6 +59,8 @@ jobs:
         run: npm run build
 
   deploy:
+    needs: build
+
     name: Deploy to Vercel
     runs-on: ubuntu-latest
     steps:
