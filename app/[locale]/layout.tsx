@@ -29,18 +29,18 @@ const fontSans = FontSans({
   variable: '--font-sans',
 });
 
-export async function generateMetadata({
-  params: { locale },
-}: {
-  params: { locale: string };
-}): Promise<Metadata> {
-  const t = await getTranslations({ locale, namespace: 'home' });
+// export async function generateMetadata({
+//   params: { locale },
+// }: {
+//   params: { locale: string };
+// }): Promise<Metadata> {
+//   const t = await getTranslations({ locale, namespace: 'home' });
 
-  return {
-    title: 'Farhan Aziz Ath Thariq | Fullstack Web Developer',
-    description: t('heroDescription'),
-  };
-}
+//   return {
+//     title: 'Farhan Aziz Ath Thariq | Fullstack Web Developer',
+//     description: t('heroDescription'),
+//   };
+// }
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
