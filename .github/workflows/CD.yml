@@ -1,4 +1,4 @@
-name: Cypress E2E testing and Deploy to Vultr
+name: Check build time and deploy to azure VM
 
 on:
   push:
@@ -73,7 +73,7 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          port: 5555
+          port: 22
           script: |
             cd /home/farhan/app/portfolio-web || true
             git pull origin main || true
