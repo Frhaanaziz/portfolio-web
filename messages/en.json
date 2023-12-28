@@ -1,13 +1,13 @@
 {
   "layout": {
     "headingNav1Label": "Home",
-    "headingNav1Href": "/",
+    "headingNav1Href": "/#hero",
     "headingNav2Label": "About",
-    "headingNav2Href": "#about",
+    "headingNav2Href": "/#about",
     "headingNav3Label": "Projects",
-    "headingNav3Href": "#projects",
+    "headingNav3Href": "/#projects",
     "headingNav4Label": "Contact",
-    "headingNav4Href": "#contact",
+    "headingNav4Href": "/#contact",
 
     "footerText": "© Copyright 2023. Made by Farhan Aziz"
   },

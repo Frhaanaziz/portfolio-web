@@ -1,13 +1,13 @@
 {
   "layout": {
     "headingNav1Label": "ホーム",
-    "headingNav1Href": "/",
+    "headingNav1Href": "/#hero",
     "headingNav2Label": "紹介",
-    "headingNav2Href": "#about",
+    "headingNav2Href": "/#about",
     "headingNav3Label": "プロジェクト",
-    "headingNav3Href": "#projects",
+    "headingNav3Href": "/#projects",
     "headingNav4Label": "お問い合わせ",
-    "headingNav4Href": "#contact",
+    "headingNav4Href": "/#contact",
 
     "footerText": "© 著作権2023年。ファルハンアジズによって作られました。"
   },
