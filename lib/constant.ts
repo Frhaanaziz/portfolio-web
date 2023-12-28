@@ -31,3 +31,4 @@ export const skills = [
   'Tailwind',
   'Cypress E2E',
 ];
+export const projects = ['thriftshop'];
