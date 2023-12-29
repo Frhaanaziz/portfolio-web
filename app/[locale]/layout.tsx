@@ -11,11 +11,12 @@ import NextTopLoader from 'nextjs-toploader';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import { cn } from '@/lib/utils';
 import Header from '@/components/layout/Header';
-import { NextIntlClientProvider } from 'next-intl';
+import { AbstractIntlMessages, NextIntlClientProvider } from 'next-intl';
 import { Provider as BalancerProvider } from 'react-wrap-balancer';
 import ToastProvider from '@/context/ToastProvider';
 import Footer from '@/components/layout/Footer';
 import GoogleAnalytics from '@/components/GoogleAnalytics';
+import { getIntlMessagesAction } from '../_actions';
 
 interface RootLayoutProps {
   children: ReactNode;
@@ -57,7 +58,8 @@ export default async function LocaleLayout({
 
   let messages;
   try {
-    messages = (await import(`../../messages/${locale}.json`)).default;
+    messages = (await getIntlMessagesAction({ locale })).data ?? {};
+    // messages = (await import(`../../messages/${locale}.json`)).default;
   } catch (error) {
     notFound();
   }

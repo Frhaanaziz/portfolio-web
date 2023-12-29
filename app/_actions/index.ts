@@ -29,7 +29,7 @@ export async function getIntlMessagesAction(
       '/keywords'
     )) as { data: DataInput[] };
 
-    const result: { [key: string]: { [key: string]: string } } = {};
+    const result: { [id: string]: { [id: string]: string } } = {};
 
     data.forEach((item) => {
       const group = item.group;
