@@ -11,6 +11,7 @@ import {
   staggerAnimationVariant,
 } from '@/lib/animations';
 import { useTranslations } from 'next-intl';
+import RichText from '../RichText';
 
 const HomeAboutSection = () => {
   const t = useTranslations('home');
@@ -58,19 +59,8 @@ const HomeAboutSection = () => {
             >
               {t('aboutDescriptionHeading')}
             </motion.h3>
-            {array4.map((i) => (
-              <motion.p
-                variants={leftAnimationVariant}
-                initial="initial"
-                whileInView={'animate'}
-                viewport={{ once: true }}
-                className="text-muted-foreground"
-                key={i}
-              >
-                {/* @ts-ignore */}
-                {t(`aboutDescription${i}`)}
-              </motion.p>
-            ))}
+
+            <RichText content={t.raw(`aboutDescription`)} />
 
             <motion.div
               variants={leftAnimationVariant}
