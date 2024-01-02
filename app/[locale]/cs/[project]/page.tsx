@@ -60,10 +60,7 @@ const CaseStudyProjectPage = ({
           {t('overviewHeading')}
         </h2>
 
-        <RichText
-          // @ts-ignore
-          content={t.raw(`${project}OverviewDescription`)}
-        />
+        <RichText content={t.raw(`${project}OverviewDescription`)} />
 
         <h2 className="text-xl md:text-2xl font-semibold mt-16">
           {t('toolsHeading')}
@@ -71,11 +68,9 @@ const CaseStudyProjectPage = ({
         <ul className="flex flex-wrap gap-4 mt-7">
           {key.map((i) => (
             <li
-              // @ts-ignore
               key={t(`${project}Tools${i}`)}
               className="bg-primary text-primary-foreground text-sm font-medium py-2 px-3 rounded-md"
             >
-              {/* @ts-ignore */}
               {t(`${project}Tools${i}`)}
             </li>
           ))}
@@ -88,7 +83,6 @@ const CaseStudyProjectPage = ({
           <Link
             className={cn(buttonVariants({ size: 'lg' }), '')}
             target="_blank"
-            // @ts-ignore
             href={t(`${project}Link`)}
           >
             {t('projectLinkLabel')}
@@ -98,9 +92,10 @@ const CaseStudyProjectPage = ({
               buttonVariants({ size: 'lg', variant: 'outline' }),
               ''
             )}
-            href="/"
+            href={t(`${project}GithubLink`)}
+            target="_blank"
           >
-            {t('backHeading')}
+            {t('sourceCodeHeading')}
           </Link>
         </div>
       </section>
