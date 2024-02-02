@@ -1,3 +1,5 @@
+import { Variants } from 'framer-motion';
+
 export const animationVariant = {
   initial: {
     opacity: 0,
@@ -7,7 +9,7 @@ export const animationVariant = {
     opacity: 1,
     y: 0,
   },
-};
+} satisfies Variants;
 
 export const leftAnimationVariant = {
   initial: {
@@ -18,7 +20,7 @@ export const leftAnimationVariant = {
     opacity: 1,
     x: 0,
   },
-};
+} satisfies Variants;
 
 export const rightAnimationVariant = {
   initial: {
@@ -29,7 +31,7 @@ export const rightAnimationVariant = {
     opacity: 1,
     x: 0,
   },
-};
+} satisfies Variants;
 
 export const staggerAnimationVariant = {
   initial: {
@@ -43,4 +45,4 @@ export const staggerAnimationVariant = {
       delay: (index - 1) * 0.05,
     },
   }),
-};
+} satisfies Variants;
