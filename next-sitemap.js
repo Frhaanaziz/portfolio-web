@@ -1,5 +1,5 @@
-// const env = require('./env.mjs');
-import { env } from './env.mjs';
+const env = require('./env.mjs');
+// import { env } from './env.mjs';
 
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
