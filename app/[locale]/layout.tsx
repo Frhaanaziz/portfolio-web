@@ -17,6 +17,7 @@ import ToastProvider from '@/context/ToastProvider';
 import Footer from '@/components/layout/Footer';
 import GoogleAnalytics from '@/components/GoogleAnalytics';
 import { getIntlMessagesAction } from '../_actions';
+import { env } from '@/env.mjs';
 
 interface RootLayoutProps {
   children: ReactNode;
@@ -72,8 +73,8 @@ export default async function LocaleLayout({
           fontSans.variable
         )}
       >
-        {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS && (
-          <GoogleAnalytics ga_id={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS} />
+        {env.NEXT_PUBLIC_GOOGLE_ANALYTICS && (
+          <GoogleAnalytics ga_id={env.NEXT_PUBLIC_GOOGLE_ANALYTICS} />
         )}
         <ThemeProvider attribute="class" disableTransitionOnChange>
           <NextTopLoader color="#2663E9" />
