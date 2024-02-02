@@ -1,6 +1,7 @@
 import { Github, Linkedin, Mail } from 'lucide-react';
+import { env } from '@/env.mjs';
 
-export const backendUrl = process.env.BACKEND_URL!;
+export const backendUrl = env.BACKEND_URL;
 
 export const avatarUrl = '/images/avatar.jpg';
 export const contactNavigation = [
