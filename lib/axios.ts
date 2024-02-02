@@ -1,9 +1,9 @@
+import { env } from '@/env.mjs';
 import axios from 'axios';
-import { backendUrl } from './constant';
 
 export function getBackendApi(token?: string, params?: any) {
   return axios.create({
-    baseURL: backendUrl,
+    baseURL: env.BACKEND_URL,
     headers: {
       Authorization: token ? `Bearer ${token}` : undefined,
     },
