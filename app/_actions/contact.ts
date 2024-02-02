@@ -4,8 +4,9 @@ import { Resend } from 'resend';
 import ContactFormEmail from '@/email/contact-form-email';
 import { ContactFormSchema } from '@/lib/validations/contact';
 import { getErrorMessage, getZodErrorMessage } from '@/lib/utils';
+import { env } from '@/env.mjs';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend(env.RESEND_API_KEY);
 
 export async function sendEmailAction(
   rawData: z.infer<typeof ContactFormSchema>
