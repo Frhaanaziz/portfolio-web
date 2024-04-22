@@ -19,15 +19,19 @@ export const contactNavigation = [
   },
 ];
 export const skills = [
+  'HTML',
+  'CSS',
   'Javascript',
   'Typescript',
   'React',
-  'Nextjs',
+  'Next.js',
+  'NestJS',
+  'NodeJS',
+  'Nginx',
   'Git',
   'Github Actions',
   'Bash',
-  'Tailwind',
-  'Cypress E2E',
+  'Tailwind CSS',
 ];
 export const projects = ['thriftshop'];
 
@@ -49,3 +53,38 @@ export const navLinks = [
     label: 'Contact',
   },
 ];
+
+export const tabunganWisataData = {
+  images: Array.from(
+    { length: 4 },
+    (_, i) => `/images/tabungan-wisata-${i}.png`
+  ),
+  link: 'https://tw-front.aththariq.com',
+  sourceCode:
+    'https://github.com/Frhaanaziz/tabungan-wisata/tree/main/apps/front',
+};
+
+export const tabunganWisataAdminData = {
+  images: Array.from(
+    { length: 6 },
+    (_, i) => `/images/tabungan-wisata-admin-${i}.png`
+  ),
+  link: 'https://tw-admin.aththariq.com',
+  sourceCode:
+    'https://github.com/Frhaanaziz/tabungan-wisata/tree/main/apps/admin',
+};
+export const tabunganWisataDashboardData = {
+  images: Array.from(
+    { length: 5 },
+    (_, i) => `/images/tabungan-wisata-dashboard-${i}.png`
+  ),
+  link: 'https://tw-student.aththariq.com',
+  sourceCode:
+    'https://github.com/Frhaanaziz/tabungan-wisata/tree/main/apps/student',
+};
+
+export const thriftshopData = {
+  images: Array.from({ length: 1 }, (_, i) => `/images/thriftshop-${i}.png`),
+  link: 'https://thriftshop.aththariq.com',
+  sourceCode: 'https://github.com/Frhaanaziz/thriftshop',
+};
