@@ -9,7 +9,6 @@ export const env = createEnv({
    */
   server: {
     RESEND_API_KEY: z.string().min(1),
-    BACKEND_URL: z.string().url(),
   },
   /*
    * Environment variables available on the client (and server).
@@ -28,7 +27,6 @@ export const env = createEnv({
    */
   runtimeEnv: {
     RESEND_API_KEY: process.env.RESEND_API_KEY,
-    BACKEND_URL: process.env.BACKEND_URL,
     NEXT_PUBLIC_GOOGLE_ANALYTICS: process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS,
     NEXT_PUBLIC_BASE_URL: process.env.NEXT_PUBLIC_BASE_URL,
   },
