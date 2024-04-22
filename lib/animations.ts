@@ -8,6 +8,7 @@ export const animationVariant = {
   animate: {
     opacity: 1,
     y: 0,
+    transitionDuration: '1s',
   },
 } satisfies Variants;
 
@@ -19,6 +20,7 @@ export const leftAnimationVariant = {
   animate: {
     opacity: 1,
     x: 0,
+    transitionDuration: '1s',
   },
 } satisfies Variants;
 
@@ -30,6 +32,7 @@ export const rightAnimationVariant = {
   animate: {
     opacity: 1,
     x: 0,
+    transitionDuration: '1s',
   },
 } satisfies Variants;
 
@@ -44,5 +47,6 @@ export const staggerAnimationVariant = {
     transition: {
       delay: (index - 1) * 0.05,
     },
+    transitionDuration: '1s',
   }),
 } satisfies Variants;
