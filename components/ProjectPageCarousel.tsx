@@ -20,7 +20,7 @@ const ProjectPageCarousel = ({ images }: Props) => {
       className="w-full h-full"
       plugins={[
         Autoplay({
-          delay: Math.floor(Math.random() * 5000) + 2000,
+          delay: 3000,
         }),
       ]}
     >
