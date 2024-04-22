@@ -1,7 +1,7 @@
 'use client';
 import { Link } from '@/navigation';
 import { buttonVariants } from '../ui/button';
-import { array4, cn } from '@/lib/utils';
+import { cn } from '@/lib/utils';
 import { skills } from '@/lib/constant';
 import Balancer from 'react-wrap-balancer';
 import { motion } from 'framer-motion';
