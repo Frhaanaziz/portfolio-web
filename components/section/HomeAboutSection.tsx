@@ -71,7 +71,7 @@ const HomeAboutSection = () => {
             >
               <Link
                 className={cn(buttonVariants({ size: 'lg' }), '')}
-                href={t(`aboutLinkHref`)}
+                href={'#contact'}
               >
                 {t(`aboutLinkLabel`)}
               </Link>

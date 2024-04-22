@@ -6,6 +6,7 @@ import { cn, toTitleCase } from '@/lib/utils';
 import { Link } from '@/navigation';
 import { useTranslations } from 'next-intl';
 import { unstable_setRequestLocale } from 'next-intl/server';
+import { notFound } from 'next/navigation';
 import Balancer from 'react-wrap-balancer';
 
 const CaseStudyProjectPage = ({
@@ -16,11 +17,39 @@ const CaseStudyProjectPage = ({
   unstable_setRequestLocale(locale);
   const t = useTranslations('CSProject');
 
-  const key = Array.from(
-    { length: Number(t('thriftshopToolsCount')) },
-    (_, i) => i + 1
-  );
-  //   const key = Array.from({ length: NaN }, (_, i) => i + 1);
+  const projects = {
+    thriftshop: {
+      image: '/images/thriftshop-dark.png',
+      link: 'https://thriftshop.aththariq.com/',
+      sourceCode: 'https://github.com/Frhaanaziz/thriftshop',
+      description: `<p>Thrift Shop is an e-commerce platform that allows users to create their own online store and sell secondhand items like a thrift shop. Users can register an account, create a store profile, and upload their products.</p>
+
+      <p>Main features:</p>
+      
+      <ul>
+      <li>User account registration</li>
+      
+      <li>Store profile creation</li>
+      
+      <li>Store panel to manage products</li>
+      
+      <li>Product upload form with description details, photos, category, stock, and price</li>
+      
+      <li>Product search and filtering system</li>
+      
+      <li>Shopping cart</li>
+      
+      <li>The store panel allows sellers to manage their products by adding stock and updating details.</li>
+      
+      <li>Buyers can browse and search for products from various stores and add them to the shopping cart.</li>
+      </ul>`,
+      tools: ['Typescript', 'Next.js', 'Supabase', 'Shadcn UI', 'Tailwind CSS'],
+    },
+  };
+
+  // @ts-ignore
+  const projectData = projects[project];
+  if (!projectData) notFound();
 
   return (
     <main>
@@ -38,8 +67,7 @@ const CaseStudyProjectPage = ({
         <Link
           className={buttonVariants({ size: 'lg' })}
           target="_blank"
-          // @ts-ignore
-          href={t(`${project}Link`)}
+          href={projectData.link}
         >
           {t('projectLinkLabel')}
         </Link>
@@ -60,18 +88,19 @@ const CaseStudyProjectPage = ({
           {t('overviewHeading')}
         </h2>
 
-        <RichText content={t.raw(`${project}OverviewDescription`)} />
+        {/* <RichText content={t.raw(projectData.description)} /> */}
+        <RichText content={projectData.description} />
 
         <h2 className="text-xl md:text-2xl font-semibold mt-16">
           {t('toolsHeading')}
         </h2>
         <ul className="flex flex-wrap gap-4 mt-7">
-          {key.map((i) => (
+          {projectData.tools.map((tool: string) => (
             <li
-              key={t(`${project}Tools${i}`)}
+              key={tool}
               className="bg-primary text-primary-foreground text-sm font-medium py-2 px-3 rounded-md"
             >
-              {t(`${project}Tools${i}`)}
+              {tool}
             </li>
           ))}
         </ul>
@@ -83,16 +112,13 @@ const CaseStudyProjectPage = ({
           <Link
             className={cn(buttonVariants({ size: 'lg' }), '')}
             target="_blank"
-            href={t(`${project}Link`)}
+            href={projectData.link}
           >
             {t('projectLinkLabel')}
           </Link>
           <Link
-            className={cn(
-              buttonVariants({ size: 'lg', variant: 'outline' }),
-              ''
-            )}
-            href={t(`${project}GithubLink`)}
+            className={buttonVariants({ size: 'lg', variant: 'outline' })}
+            href={projectData.sourceCode}
             target="_blank"
           >
             {t('sourceCodeHeading')}

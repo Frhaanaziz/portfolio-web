@@ -1,0 +1,42 @@
+{
+  "Home": "家",
+  "About": "について",
+  "Projects": "プロジェクト",
+  "Contact": "接触",
+  "home": {
+    "heroHeading": "こんにちは、ファルハンです",
+    "heroDescription": "堅牢なフロントエンド設計と強力なバックエンドをシームレスに統合することで、包括的な Web ソリューションを作成するフルスタック開発者",
+    "heroLinkLabel": "プロジェクト",
+    "aboutHeading": "私について",
+    "aboutSubHeading": "ここでは、私についての詳細、私の仕事、主にプログラミングとテクノロジーに関する現在のスキルについて説明します。",
+    "aboutDescriptionHeading": "私を知ってください！",
+    "aboutDescription": "<p>私は、最初から最後まで完全な Web アプリケーションを構築することに熟練したフルスタック Web 開発者です。\n私は、Web アプリケーションのフロントエンド部分とバックエンド部分の両方を開発し、クライアント側とサーバー側の両方のテクノロジを使用します。</p> <p>フロントエンドでは、HTML を使用して応答性が高く直感的なユーザー インターフェイスを作成します。 \n、CSS、React などの JavaScript フレームワーク。\nユーザー エクスペリエンスを強化し、モバイル デバイスのブラウザ間の互換性と応答性を確保する機能を実装します。</p> <p>バックエンドでは、NestJS を使用して、機能、セキュリティ、データのためのサーバー、API、データベース コンポーネントを開発します。 \nMySQL や PostgreSQL などのデータベース。\n私は RESTful API を通じてフロントエンド要素をバックエンドと統合しています。</p> <p>貢献し、学び、成長できる仕事の機会を歓迎します。\n私のスキルや経験に合った良い機会があれば、遠慮せずにご連絡ください。</p>",
+    "aboutLinkLabel": "接触",
+    "aboutSkillsHeading": "私のスキル",
+    "projectsHeading": "プロジェクト",
+    "projectsSubHeading": "ここでは、私が作成した個人プロジェクトとクライアント プロジェクトの一部を紹介します。各プロジェクトには独自のケーススタディが含まれています。",
+    "Thriftshop": "リサイクルショップ",
+    "thriftshop-description": "ユーザーが独自のオンライン ストアを開設し、中古品をアップロードして販売できるプラットフォームの e コマース リサイクル ショップ。\n販売者が商品を管理するためのストアパネルがあります。\nバイヤーはさまざまなストアの商品を閲覧してチェックアウトできます。",
+    "Case Study": "ケーススタディ",
+    "contactHeading": "接触",
+    "contactSubHeading": "以下のフォームを送信して、お気軽にお問い合わせください。できるだけ早くご連絡いたします。",
+    "contactFormField1Label": "名前",
+    "contactFormField1Placeholder": "あなたの名前を入力してください",
+    "contactFormField2Placeholder": "メールアドレスを入力",
+    "contactFormField3Label": "メッセージ",
+    "contactFormField3Placeholder": "メッセージを入力してください",
+    "contactFormSubmitButtonLabel": "送信",
+    "contactFormField2Label": "Eメール"
+  },
+  "layout": {
+    "footerText": "© Copyright 2023. ファルハン・アジズ作"
+  },
+  "CSProject": {
+    "mainDescription": "このページには、プロジェクトの概要、使用したツール、公式製品へのライブ リンクを含む、{project} プロジェクトのケース スタディが含まれています。",
+    "projectLinkLabel": "プロジェクトリンク",
+    "overviewHeading": "プロジェクト概要",
+    "toolsHeading": "使用したツール",
+    "liveHeading": "ライブを見る",
+    "sourceCodeHeading": "ソースコード"
+  }
+}

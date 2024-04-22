@@ -20,23 +20,13 @@ import { useState } from 'react';
 import { buttonVariants } from '@/components/ui/button';
 import { useTranslations } from 'next-intl';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
-import { avatarUrl } from '@/lib/constant';
+import { avatarUrl, navLinks } from '@/lib/constant';
 
-const HeaderSheet = ({
-  messages,
-  locale,
-}: {
-  messages: any;
-  locale: string;
-}) => {
+const HeaderSheet = () => {
   const [isOpen, setIsOpen] = useState(false);
   //   const t = createTranslator({ locale, messages });
-  const t = useTranslations('layout');
+  const t = useTranslations();
   const Icon = [Home, HelpCircle, FolderGit2, ContactIcon];
-  const keys = Array.from({ length: 4 }, (_, i) => ({
-    icon: Icon[i],
-    key: i + 1,
-  }));
 
   return (
     <Sheet open={isOpen} onOpenChange={(v) => setIsOpen(v)}>
@@ -61,27 +51,28 @@ const HeaderSheet = ({
         <div className="flex min-h-0 flex-1 flex-col">
           <div className="flex flex-1 flex-col overflow-y-auto pb-4 pt-5">
             <nav className="flex-1 space-y-1 px-2">
-              {keys.map((item) => (
-                <Link
-                  key={item.key}
-                  // @ts-ignore
-                  href={t(`headingNav${item.key}Href`)}
-                  onClick={() => setIsOpen(false)}
-                  className={buttonVariants({
-                    variant: 'ghost',
-                    className: 'w-full',
-                  })}
-                >
-                  <div className="flex w-full items-center justify-start">
-                    <item.icon
-                      className="mr-3 h-6 w-6 shrink-0"
-                      aria-hidden="true"
-                    />
-                    {/* @ts-ignore */}
-                    {t(`headingNav${item.key}Label`)}
-                  </div>
-                </Link>
-              ))}
+              {navLinks.map(({ href, label }, i) => {
+                const IconComponent = Icon[i];
+                return (
+                  <Link
+                    key={href}
+                    href={href}
+                    onClick={() => setIsOpen(false)}
+                    className={buttonVariants({
+                      variant: 'ghost',
+                      className: 'w-full',
+                    })}
+                  >
+                    <div className="flex w-full items-center justify-start">
+                      <IconComponent
+                        className="mr-3 h-6 w-6 shrink-0"
+                        aria-hidden="true"
+                      />
+                      {t(label)}
+                    </div>
+                  </Link>
+                );
+              })}
             </nav>
           </div>
         </div>

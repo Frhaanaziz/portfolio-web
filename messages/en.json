@@ -1,0 +1,42 @@
+{
+  "Home": "Home",
+  "About": "About",
+  "Projects": "Projects",
+  "Contact": "Contact",
+  "home": {
+    "heroHeading": "HEY, I'M FARHAN",
+    "heroDescription": "A Full Stack Developer crafting comprehensive web solutions by seamlessly integrating robust Frontend designs with powerful Backends",
+    "heroLinkLabel": "Projects",
+    "aboutHeading": "About Me",
+    "aboutSubHeading": "Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology",
+    "aboutDescriptionHeading": "Get to know me!",
+    "aboutDescription": "<p>I'm a Full Stack Web Developer skilled in building complete web applications from start to finish. I develop both the front-end and back-end portions of web applications, working with both client-side and server-side technologies.</p>  <p>On the front-end, I create responsive and intuitive user interfaces using HTML, CSS, JavaScript frameworks like React. I implement features that enhance the user experience and ensure cross-browser compatibility and responsiveness for mobile devices.</p>  <p>On the back-end, I develop server, API and database components for functionality, security and data using NestJS and databases such as MySQL and PostgreSQL. I integrate the front-end elements with the back-end through RESTful APIs.</p>  <p>I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.</p>",
+    "aboutLinkLabel": "Contact",
+    "aboutSkillsHeading": "My Skills",
+    "projectsHeading": "Projects",
+    "projectsSubHeading": "Here you will find some of the personal and clients projects that I created with each project containing its own case study",
+    "Thriftshop": "Thriftshop",
+    "thriftshop-description": "A platform e-commerce thrift shop that allows users to open their own online stores and upload used products to sell. There is a store panel for sellers to manage products. Buyers can view and checkout items from various stores.",
+    "Case Study": "Case Study",
+    "contactHeading": "Contact",
+    "contactSubHeading": "Feel free to Contact me by submitting the form below and I will get back to you as soon as possible",
+    "contactFormField1Label": "Name",
+    "contactFormField1Placeholder": "Enter your name",
+    "contactFormField2Label": "Email",
+    "contactFormField2Placeholder": "Enter your email",
+    "contactFormField3Label": "Message",
+    "contactFormField3Placeholder": "Enter your message",
+    "contactFormSubmitButtonLabel": "Send"
+  },
+  "layout": {
+    "footerText": "© Copyright 2023. Made by Farhan Aziz"
+  },
+  "CSProject": {
+    "mainDescription": "This page contains the case study of {project} project which includes the Project Overview, Tools Used and Live Links to the official product.",
+    "projectLinkLabel": "Project Link",
+    "overviewHeading": "Project Overview",
+    "toolsHeading": "Tools Used",
+    "liveHeading": "See Live",
+    "sourceCodeHeading": "Source Code"
+  }
+}

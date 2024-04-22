@@ -16,6 +16,14 @@ import ImageTheme from '../ImageTheme';
 const HomeProjectsSection = () => {
   const t = useTranslations('home');
 
+  const projects = [
+    {
+      name: t('Thriftshop'),
+      description: t('thriftshop-description'),
+      link: '/cs/thriftshop',
+    },
+  ];
+
   return (
     <section className="py-20 container" id="projects">
       <motion.h2
@@ -48,9 +56,9 @@ const HomeProjectsSection = () => {
       </motion.p>
 
       <div className="flex flex-col mt-20 gap-24 md:gap-32">
-        {array1.map((i) => (
+        {projects.map(({ description, link, name }, i) => (
           <div
-            key={i}
+            key={link}
             className="flex justify-center flex-col items-center md:flex-row gap-10 lg:gap-16"
           >
             <motion.div
@@ -79,8 +87,7 @@ const HomeProjectsSection = () => {
                 viewport={{ once: true }}
                 className="text-2xl font-semibold mb-8"
               >
-                {/* @ts-ignore */}
-                {t(`projects${i}Heading`)}
+                {name}
               </motion.h3>
               <motion.p
                 variants={rightAnimationVariant}
@@ -89,10 +96,7 @@ const HomeProjectsSection = () => {
                 viewport={{ once: true }}
                 className="text-muted-foreground"
               >
-                <Balancer>
-                  {/* @ts-ignore */}
-                  {t(`projects${i}Description`)}
-                </Balancer>
+                <Balancer>{description}</Balancer>
               </motion.p>
 
               <motion.div
@@ -102,12 +106,10 @@ const HomeProjectsSection = () => {
                 viewport={{ once: true }}
               >
                 <Link
-                  // @ts-ignore
-                  href={t(`projects${i}CSLink`)}
+                  href={link}
                   className={cn(buttonVariants({ size: 'lg' }), 'mt-8')}
                 >
-                  {/* @ts-ignore */}
-                  {t(`projects${i}CSLabel`)}
+                  {t('Case Study')}
                 </Link>
               </motion.div>
             </div>

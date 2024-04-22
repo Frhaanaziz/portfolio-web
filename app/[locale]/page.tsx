@@ -30,10 +30,7 @@ const HomePage = ({ params: { locale } }: { params: { locale: string } }) => {
           >
             {t('heroDescription')}
           </Balancer>
-          <Link
-            className={buttonVariants({ size: 'lg' })}
-            href={t('heroLinkHref')}
-          >
+          <Link className={buttonVariants({ size: 'lg' })} href={'#projects'}>
             {t('heroLinkLabel')}
           </Link>
         </div>

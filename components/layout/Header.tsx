@@ -3,31 +3,17 @@ import { ReactNode } from 'react';
 import HeaderSheet from './HeaderSheet';
 import { ModeToggle } from '../ModeToggle';
 import { getTranslations } from 'next-intl/server';
-import { array4 } from '@/lib/utils';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { buttonVariants } from '../ui/button';
-import { avatarUrl } from '@/lib/constant';
+import { avatarUrl, navLinks } from '@/lib/constant';
 
-const Header = async ({
-  children,
-  locale,
-}: {
-  children?: ReactNode;
-  locale: string;
-}) => {
-  //   const section = await getSectionDataAction({
-  //     locale,
-  //     identifier: 'layout',
-  //   });
-  //   const messages = convertToLocalMessage(section);
-  //   const t = createTranslator({ locale, messages });
-  const t = await getTranslations('layout');
+const Header = async ({ children }: { children?: ReactNode }) => {
+  const t = await getTranslations();
 
   return (
     <header className="sticky top-0 z-50 border-b bg-background">
       <div className="container flex h-16 items-center justify-between">
-        {/* <HeaderSheet messages={messages} locale={locale} /> */}
-        <HeaderSheet messages={''} locale={locale} />
+        <HeaderSheet />
 
         <Link
           href={'/'}
@@ -42,26 +28,19 @@ const Header = async ({
 
         <div className="flex gap-3">
           <nav className="hidden md:flex gap-2">
-            {array4.map((key) => (
+            {navLinks.map(({ href, label }) => (
               <Link
-                key={key}
-                // data-test={`headingNavLink${key}`}
-                // @ts-ignore
-                href={t(`headingNav${key}Href`)}
+                key={href}
+                href={href}
                 className={buttonVariants({
                   variant: 'ghost',
                 })}
               >
-                {/* @ts-ignore */}
-                {t(`headingNav${key}Label`)}
+                {t(label)}
               </Link>
             ))}
           </nav>
-
           {children}
-          <div>
-            <ModeToggle />
-          </div>
         </div>
       </div>
     </header>
