@@ -1,5 +1,4 @@
 import { getRequestConfig } from 'next-intl/server';
-import { getIntlMessagesAction } from './app/_actions';
 
 // export default getRequestConfig(async ({ locale }) => ({
 //   messages: (await getIntlMessagesAction({ locale })).data ?? {},
