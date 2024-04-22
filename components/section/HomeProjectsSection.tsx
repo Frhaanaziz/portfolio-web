@@ -1,26 +1,55 @@
 'use client';
+import { animationVariant, rightAnimationVariant } from '@/lib/animations';
+import Autoplay from 'embla-carousel-autoplay';
 import {
-  animationVariant,
-  leftAnimationVariant,
-  rightAnimationVariant,
-} from '@/lib/animations';
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from '@/components/ui/carousel';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import Balancer from 'react-wrap-balancer';
 import { Link } from '@/navigation';
-import { array1, cn } from '@/lib/utils';
+import { cn } from '@/lib/utils';
 import { buttonVariants } from '../ui/button';
 import { AspectRatio } from '../ui/aspect-ratio';
-import ImageTheme from '../ImageTheme';
+import Image from 'next/image';
+import {
+  tabunganWisataAdminData,
+  tabunganWisataDashboardData,
+  tabunganWisataData,
+  thriftshopData,
+} from '@/lib/constant';
 
 const HomeProjectsSection = () => {
   const t = useTranslations('home');
 
   const projects = [
     {
-      name: t('Thriftshop'),
+      name: 'Tabungan Wisata',
+      description: t('tabungan-wisata-description'),
+      link: '/cs/tabungan-wisata',
+      images: tabunganWisataData.images,
+    },
+    {
+      name: 'Tabungan Wisata Admin',
+      description: t('tabungan-wisata-admin-description'),
+      link: '/cs/tabungan-wisata-admin',
+      images: tabunganWisataAdminData.images,
+    },
+    {
+      name: 'Tabungan Wisata Dashboard',
+      description: t('tabungan-wisata-dashboard-description'),
+      link: '/cs/tabungan-wisata-dashboard',
+      images: tabunganWisataDashboardData.images,
+    },
+    {
+      name: 'Thriftshop',
       description: t('thriftshop-description'),
       link: '/cs/thriftshop',
+      images: thriftshopData.images,
     },
   ];
 
@@ -56,28 +85,37 @@ const HomeProjectsSection = () => {
       </motion.p>
 
       <div className="flex flex-col mt-20 gap-24 md:gap-32">
-        {projects.map(({ description, link, name }, i) => (
+        {projects.map(({ description, link, name, images }) => (
           <div
             key={link}
             className="flex justify-center flex-col items-center md:flex-row gap-10 lg:gap-16"
           >
-            <motion.div
-              variants={leftAnimationVariant}
-              initial="initial"
-              whileInView={'animate'}
-              viewport={{ once: true }}
+            <Carousel
               className="w-full h-full"
+              plugins={[
+                Autoplay({
+                  delay: Math.floor(Math.random() * 5000) + 2000,
+                }),
+              ]}
             >
-              <AspectRatio ratio={3 / 2}>
-                <ImageTheme
-                  dark={'/images/thriftshop-dark.png'}
-                  light="/images/thriftshop-light.png"
-                  alt="Thriftshop"
-                  fill
-                  sizes="(min-width: 1536px) 30vw, (min-width: 1280px) 45vw, (min-width: 1024px) 45vw, (min-width: 768px) 100vw, (min-width: 640px) 100vw, 100vw"
-                />
-              </AspectRatio>
-            </motion.div>
+              <CarouselContent>
+                {images.map((imageUrl) => (
+                  <CarouselItem key={imageUrl}>
+                    <AspectRatio ratio={16 / 9}>
+                      <Image
+                        src={imageUrl}
+                        alt={name}
+                        fill
+                        sizes="(min-width: 1536px) 70vw, (min-width: 1280px) 70vw, (min-width: 1024px) 70vw, (min-width: 768px) 100vw, (min-width: 640px) 100vw, 100vw"
+                        style={{ objectFit: 'contain' }}
+                      />
+                    </AspectRatio>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
 
             <div className="w-full text-center md:text-left">
               <motion.h3
