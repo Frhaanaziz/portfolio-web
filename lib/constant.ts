@@ -41,15 +41,15 @@ export const navLinks = [
     label: 'Home',
   },
   {
-    href: '#about',
+    href: '/#about',
     label: 'About',
   },
   {
-    href: '#projects',
+    href: '/#projects',
     label: 'Projects',
   },
   {
-    href: '#contact',
+    href: '/#contact',
     label: 'Contact',
   },
 ];
